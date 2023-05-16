@@ -1,0 +1,9 @@
+{
+  "name": "clock",
+  "version": "2023.05.16",
+  "license": "MIT",
+  "dependencies": {
+    "dat.gui": "^0.7.9",
+    "three": "^0.152.2"
+  }
+}
