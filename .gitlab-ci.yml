@@ -4,6 +4,7 @@ stages:
   - deploy
 
 surge-npx:
+  image: node
   script:
     - npx surge ./src/www/
 
