@@ -1,14 +1,15 @@
-# 
 
 stages:
-  - deploy
+  - upload
 
 surge-npx:
   image: node
+  stage: upload
   script:
     - npx surge ./src/www/
 
 deploy-job:
-  stage: deploy
+  image: node
+  stage: upload
   script:
     - echo "Application successfully deployed."
