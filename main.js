@@ -1,13 +1,13 @@
-import * as THREE from '../../assets/js/libs/three/index.js'
+import * as THREE from './libs/three/index.js'
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js'
 import { TextGeometry } from 'three/addons/geometries/TextGeometry.js'
 import { FontLoader } from 'three/addons/loaders/FontLoader.js'
 
-import { getWidth, getHeight } from '../../assets/js/utils/window.js'
-import { createCamera } from '../../assets/js/utils/3d.js'
-import { padLeft } from '../../assets/js/utils/str.js'
+import { getWidth, getHeight } from './utils/window.js'
+import { createCamera } from './utils/3d.js'
+import { padLeft } from './utils/str.js'
 
-const helvetiker = '../../assets/fonts/helvetiker_regular.typeface.json'
+const helvetiker = './fonts/helvetiker_regular.typeface.json'
 
 const scene = new THREE.Scene()
 const camera = createCamera()
